@@ -1,0 +1,232 @@
+body {
+	display: flex;
+	flex-flow: column;
+	margin: 0px;
+	padding: 0px;
+	height: 100vh;
+	overflow: hidden;
+	user-select: none;
+
+	border: 1px solid #ffffff;
+	background: radial-gradient(at 0% 0%, #FFFFFF 50%, #000000);
+
+	font-family: cursive;
+	font-size: 1.3rem;
+	text-align: center;
+}
+
+.infoandchat {
+	display: flex;
+	flex-direction: row;
+	align-self: center;
+	margin: auto 0 auto 0;
+	padding: 0;
+    max-height: 516px;
+}
+
+.infoblock {
+	display: flex;
+	flex-direction: column;
+    justify-content: space-between;
+	width: 245px;
+	margin: 0 10px 0 auto;
+}
+
+.chat {
+	display: flex;
+	flex-flow: row;
+
+	width: 55vw;
+	min-width: 570px;
+	border: 8px solid #000000;
+  	border-radius: 30px;
+
+  	max-height: 550px;
+
+  	margin: 0 auto 0 10px;
+}
+
+.personinfo {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	
+	height: 360px;
+	border: 8px solid #000000;
+	border-radius: 30px;
+}
+
+.personicon {
+	align-self: center;
+
+	height: 180px;
+	width: 180px;
+	border: 8px solid #A9A9A9;
+	border-radius: 30px;
+}
+
+.textfield {
+	align-self: center;
+
+	height: 30px;
+	width: 180px;
+	border: 5px solid #A9A9A9;
+	border-radius: 15px;
+	padding: 5px;
+	margin: 0px;
+
+	color: #000000;
+}
+
+.btn {
+	height: 55px;
+	margin: 15px 0px 0px 0px;
+
+  	background-color: transparent;
+  	border: 8px solid #000000;
+  	border-radius: 30px;
+  	color: #000000;
+  	text-transform: uppercase;
+
+  	font-family: cursive;
+	font-size: 1.3rem;
+	text-align: center;
+}
+
+.btn:hover, .btn:focus {
+  	color: #000000;
+  	outline: 0;
+}
+
+.infobtn {
+  	border-color: #000000;
+  	color: #000000;
+  	box-shadow: 0 0 40px 40px #ffffff inset, 0 0 0 0 #ffffff;
+  	transition: all 150ms ease-in-out;
+}
+
+.infobtn:hover {
+  	box-shadow: 0 0 10px 0 #000000 inset, 0 0 10px 4px #000000;
+}
+
+.messagelist {
+	display: flex;
+	flex-flow: column;
+	flex-grow: 1;
+}
+
+.listofpeople {
+	display: flex;
+	flex-flow: column;
+
+	border-left-color: #000000;
+    border-left-style: solid;
+    border-left-width: 8px;
+    min-width: 150px;
+	width: 30%;
+}
+
+.people {
+   	box-shadow: 0 3px 3px 0px #000000, inset 0 -3px 3px 0px #000000;
+
+   	cursor: default;
+   	padding: 5px;
+
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.people:hover {
+	text-shadow: 0 0 10px #000000;
+	font-size: 2rem;
+}
+
+.messages {
+	display: flex;
+	flex-flow: column;
+	flex-grow: 1;
+
+	overflow-y: scroll; 
+	overflow-x: hidden;
+
+	padding: 10px 5px 10px 5px;
+	margin: 5px 3px 5px 3px;
+}
+
+div::-webkit-scrollbar {
+  width: 7px;
+}
+
+div::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+div::-webkit-scrollbar-thumb {
+  background-color: #000000;    
+  border-radius: 20px;       
+}
+
+.msg {
+	max-width: 45%;
+	border: 2px solid #000000;
+  	border-radius: 15px;
+  	color: #000000;
+  	margin: 1px 10px 1px 10px;
+  	padding: 2px;
+  	font-size: 1.1rem;
+}
+
+.mymessage {
+	align-self: flex-end;
+}
+
+.opponentmessage {
+	align-self: flex-start;
+}
+
+.send {
+	margin: 5px;
+	font-size: 1rem;
+	border: 5px solid #000000;
+  	border-radius: 30px;
+}
+
+.inpmessage {
+	margin: 5px;
+	flex-grow: 1;
+
+	font-family: cursive;
+	font-size: 1.3rem;
+	text-align: center;
+
+	outline: none;
+	border: 5px solid #000000;
+	border-radius: 30px;
+}
+
+.sendfile {
+	margin: 5px;
+	width: 50px;
+
+	border: 5px solid #000000;
+	border-radius: 30px;
+}
+
+.sendimg {
+	width: 50px;
+}
+
+.nameofopponentdiv {
+	box-shadow: 0 3px 3px 0px #000000, inset 0 -3px 3px 0px #000000;
+
+   	cursor: default;
+   	padding: 0 5px 10px 5px;
+
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.nameofopponent {
+	padding: 0;
+	margin: 0;
+}

@@ -1,0 +1,236 @@
+body {
+	display: flex;
+	flex-flow: row;
+	align-items: center;
+	margin: 0px;
+	padding: 0px;
+	height: 100vh;
+	overflow: hidden;
+	user-select: none;
+
+	border: 1px solid #ffffff;
+	background: radial-gradient(at 0% 0%, #FFFFFF 50%, #000000);
+
+	font-family: cursive;
+	font-size: 1.3rem;
+	text-align: center;
+}
+
+p {
+	padding: 0;
+	margin: 0;
+}
+
+.imginfofriends {
+	display: flex;
+	flex-direction: row;
+
+	margin: auto;
+
+	height: 95vh;
+}
+
+.personicon {
+	align-self: center;
+
+	height: 180px;
+	width: 180px;
+	margin: 30px;
+
+	border: 8px solid #000000;
+	border-radius: 30px;
+}
+
+.imginfo {
+	display: flex;
+	flex-flow: column;
+
+	margin: 20px;
+
+	border: 8px solid #000000;
+	border-radius: 30px;
+}
+
+.personicon {
+	align-self: center;
+
+	border: 8px solid #000000;
+	border-radius: 30px;
+}
+
+.info {
+	display: flex;
+	flex-flow: column;
+
+	padding: 10px
+
+	border: 8px solid #000000;
+	border-radius: 30px;
+
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+.infoitem {
+	display: flex;
+	flex-flow: row;
+
+	margin: 5px;
+}
+
+.infoinput {
+	flex-grow: 1;
+
+	font-family: cursive;
+	font-size: 1.3rem;
+	text-align: center;
+
+	margin: 0 0 0 7px;
+
+	outline: none;
+	border: 5px solid #000000;
+	border-radius: 30px;
+}
+
+.infotext {
+
+}
+
+.changeinfobtn {
+	align-self: center;
+
+	border: 2px solid #000000;
+	border-radius: 4px;
+	background-image: url("https://e7.pngegg.com/pngimages/368/629/png-clipart-computer-icons-pencil-business-pencil-angle-pencil.png");
+	background-size: cover;
+
+	width: 25px;
+	height: 25px;
+
+	margin: 5px;
+}
+
+.btn {
+	height: 55px;
+	margin: 15px 0px 0px 0px;
+
+  	background-color: transparent;
+  	border: 8px solid #000000;
+  	border-radius: 30px;
+  	color: #000000;
+  	text-transform: uppercase;
+
+  	font-family: cursive;
+	font-size: 1.3rem;
+	text-align: center;
+}
+
+.btnanim {
+  	border-color: #000000;
+  	color: #000000;
+  	box-shadow: 0 0 40px 40px #ffffff inset, 0 0 0 0 #ffffff;
+  	transition: all 150ms ease-in-out;
+}
+
+.btnanim:hover {
+  	box-shadow: 0 0 10px 0 #000000 inset, 0 0 10px 4px #000000;
+}
+
+.friendslistme {
+	display: flex;
+	flex-flow: column;
+}
+
+.friendslist {
+	display: flex;
+	flex-flow: column;
+	flex-grow: 1;
+
+	overflow-y: scroll;
+	overflow-x: hidden;
+
+	min-width: 200px;
+	max-width: 260px;
+
+	margin: 20px;
+
+	border: 8px solid #000000;
+	border-radius: 30px;
+}
+
+.mylc {
+	margin: 5px 20px 20px 20px;
+}
+
+.people {
+   	box-shadow: 0 3px 3px 0px #000000, inset 0 -3px 3px 0px #000000;
+
+   	cursor: default;
+   	padding: 5px;
+
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.people:hover {
+	text-shadow: 0 0 10px #000000;
+	font-size: 2rem;
+}
+
+div::-webkit-scrollbar {
+  width: 7px;
+  padding: 2px;
+}
+
+div::-webkit-scrollbar-track {
+  background: transparent;
+  padding: 2px;
+}
+
+div::-webkit-scrollbar-thumb {
+  background-color: #000000;
+  border-radius: 20px;
+  padding: 2px;
+}
+
+.friendsrequests {
+	display: flex;
+	flex-flow: column;
+	flex-grow: 1;
+
+	overflow-y: scroll;
+	overflow-x: hidden;
+
+	min-width: 200px;
+	max-width: 300px;
+
+	margin: 20px;
+
+	border: 8px solid #000000;
+	border-radius: 30px;
+}
+
+.request {
+	display: flex;
+	flex-flow: row;
+}
+
+.request p {
+	flex-grow: 1;
+}
+
+.request button {
+	height: 30px;
+	width: 30px;
+	margin: 3px;
+
+  	background-color: transparent;
+  	border: 3px solid #000000;
+  	border-radius: 5px;
+  	color: #000000;
+  	text-transform: uppercase;
+
+  	font-family: cursive;
+	font-size: 1rem;
+	text-align: center;
+}

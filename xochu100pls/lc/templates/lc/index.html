@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<title>The best SN in the world</title>
+	<link rel="stylesheet" href="{%static 'lc/css/styles.css'%}">
+</head>
+<body>
+
+	<div class="imginfofriends">
+		<div class="imginfo">
+			<img src="https://www.pinclipart.com/picdir/big/139-1394794_person-silhouette-png-free-person-icon-silhouette-png.png" class="personicon">
+			<div class="info">
+				<div class="infoitem"><p class="infotext">login:</p><input type="text" class="infoinput" value="{{login}}" id="login" name="{{login}}" disabled></div>
+				<div class="infoitem"><p class="infotext">name:</p><input type="text" class="infoinput" value="{{name}}" id="name" disabled><button class="changeinfobtn" onclick="infoChangeClick('name');"></button></div>
+				<div class="infoitem"><p class="infotext">lastname:</p><input type="text" class="infoinput" value="{{lastname}}" id="lastname" disabled><button class="changeinfobtn" onclick="infoChangeClick('lastname');"></button></div>
+				<div class="infoitem"><p class="infotext">status:</p><input type="text" class="infoinput" value="{{status}}" id="status" disabled><button class="changeinfobtn" onclick="infoChangeClick('status');"></button></div>
+				<div class="infoitem"><p class="infotext">education:</p><input type="text" class="infoinput" value="{{education}}" id="education" disabled><button class="changeinfobtn" onclick="infoChangeClick('education');"></button></div>
+				<div class="infoitem"><p class="infotext">food preferences:</p><input type="text" class="infoinput" value="{{foodpreferences}}" id="foodpreferences" disabled><button class="changeinfobtn" onclick="infoChangeClick('foodpreferences');"></button></div>
+				<div class="infoitem"><p class="infotext">attitude to alcohol:</p><input type="text" class="infoinput" value="{{attitudetoalcohol}}" id="attitudetoalcohol" disabled><button class="changeinfobtn" onclick="infoChangeClick('attitudetoalcohol');"></button></div>
+				<div class="infoitem"><p class="infotext">attitude to smoking:</p><input type="text" class="infoinput" value="{{attitudetosmoking}}" id="attitudetosmoking" disabled><button class="changeinfobtn" onclick="infoChangeClick('attitudetosmoking');"></button></div>
+			</div>
+		</div>
+
+		<div class="friendslistme">
+			<div class="friendslist">
+				<!--<p class="people">Gosha</p>-->
+
+			</div>
+			<button class="btn btnanim mylc" onclick="myProfile();">my profile</button>
+			<button class="btn btnanim mylc" onclick="addFriend();">add friend</button>
+			<button class="btn btnanim mylc" onclick="goChat();">chat</button>
+		</div>
+
+		<div class="friendsrequests">
+			<!--<div class="request"><p>Vika</p><button class="btnanim">+</button><button class="btnanim">-</button></div>-->
+
+		</div>
+	</div>
+
+	<script type="text/javascript" src="{% static 'jquery-3.6.0.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'lc/js/js.js' %}"></script>
+</body>
+</html>

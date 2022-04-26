@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<title>The best SN in the world</title>
+	<link rel="stylesheet" href="{%static 'chat/css/styles.css'%}">
+</head>
+<body>
+
+	<div class="infoandchat">
+		<div class="infoblock">
+			<div class="personinfo">
+				<img class="personicon" src="https://www.pinclipart.com/picdir/big/139-1394794_person-silhouette-png-free-person-icon-silhouette-png.png">
+				<p class="textfield" id="login">{{ login }}</p>
+				<p class="textfield" id="name">{{ name }}</p>
+			</div>
+		</div>
+
+		<div class="chat">
+			<div class="messagelist">
+				<div class="nameofopponentdiv" id="opponentname">
+					<p class="nameofopponent">person</p>
+				</div>
+
+				<div class="messages" id="msgs">
+					<p class="msg mymessage">Hey</p>
+					<p class="msg opponentmessage">How are you?</p>
+				</div>
+
+				<div style="display: flex;">
+					<input type="text" class="inpmessage" id="inp">
+					<button class="send btn infobtn" onclick="sendMessage();" id="sendbtn">send</button>
+				</div>
+			</div>
+
+			<div class="listofpeople">
+				
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="{% static 'jquery-3.6.0.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'chat/js/js.js' %}"></script>
+</body>
+</html>

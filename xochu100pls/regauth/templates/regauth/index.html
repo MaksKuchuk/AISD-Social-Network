@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<title>The best SN in the world</title>
+	<link rel="stylesheet" href="{%static 'regauth/css/styles.css'%}">
+</head>
+<body>
+
+	<div class="auth">
+		<input type="text" class="inp login" id="alogin" placeholder="login">
+		<input type="password" class="inp password" id="apass1" placeholder="password">
+		<div class="empty"></div>
+		<button class="btn btnanim signin" id="signin">sign in</button>
+	</div>
+
+	<div class="reg">
+		<input type="text" class="inp login" id="rlogin" placeholder="login">
+		<input type="text" class="inp password" id="rpass1" placeholder="password">
+		<input type="text" class="inp password" id="rpass2" placeholder="repeat password">
+		<div class="empty"></div>
+		<button class="btn btnanim signup" id="signup">sigh up</button>
+	</div>
+
+	<script type="text/javascript" src="{% static 'jquery-3.6.0.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'regauth/js/js.js' %}"></script>
+</body>
+</html>
